@@ -1,0 +1,33 @@
+#Write a function days_in_month which takes the name of a month, and returns the number of days in the month. Ignore leap years:
+
+def days_in_month(x):
+
+    if x == "Janary":
+        return 31
+    elif x == "February":
+        return 28
+    elif x == "March":
+        return 31
+    elif x == "April":
+        return 30
+    elif x == "May":
+        return 31
+    elif x == "June":
+        return 30
+    elif x == "July":
+        return 31
+    elif x == "August":
+        return 31
+    elif x == "September":
+        return 30
+    elif x == "October":
+        return 31
+    elif x == "November":
+        return 30
+    elif x == "December":
+        return 31
+
+month = raw_input("Month:")
+
+num_days = days_in_month(month)
+print(num_days)
