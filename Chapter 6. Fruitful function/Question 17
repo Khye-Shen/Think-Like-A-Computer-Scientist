@@ -1,0 +1,22 @@
+#Write is_multiple to satisfy these unit tests:
+
+#is_multiple(12, 3)
+#is_multiple(12, 4)
+#not is_multiple(12, 5)
+#is_multiple(12, 6)
+#not is_multiple(12, 7)
+
+
+def is_multiple(f, n):
+
+    if f % n == 0:
+
+        return "True"
+
+    else:
+
+        return "False"
+
+multiple = is_multiple(12, 5)
+
+print(multiple)
