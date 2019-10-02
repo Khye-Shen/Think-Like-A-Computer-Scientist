@@ -1,0 +1,14 @@
+#Write a function called hypotenuse that returns the length of the hypotenuse of a right triangle given the lengths of the two legs as parameters:
+
+import math
+
+
+def hypotenuse(a, b):
+
+    c = math.sqrt(((a**2) + (b**2)))
+
+    return c
+
+length = hypotenuse(12, 5)
+
+print(length)
