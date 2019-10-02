@@ -1,0 +1,35 @@
+#Write a void (non-fruitful) function to draw a square. Use it in a program to draw the image shown below. Assume each side is 20 units. (Hint: notice that the turtle has already moved away from the ending point of the last square when the program ends.)
+
+import turtle
+
+def make_window(colr):
+
+    w = turtle.Screen()
+    w.bgcolor(colr)
+    return w
+
+
+def make_turtle(colr, sz):
+
+    t = turtle.Turtle()
+    t.color(colr)
+    t.pensize(sz)
+    return t
+
+
+def square(sz):
+
+    for i in range(4):
+        t.forward(sz)
+        t.right(90)
+
+wn = make_window("lightgreen")
+t = make_turtle("hotpink", 5)
+
+for i in range (5):
+    square(50)
+    t.penup()
+    t.forward(100)
+    t.pendown()
+
+turtle.done()
