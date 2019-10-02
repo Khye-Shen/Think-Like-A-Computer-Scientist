@@ -1,0 +1,39 @@
+#Extend your program above. Draw five stars, but between each, pick up the pen, move forward by 350 units, turn right by 144, put the pen down, and draw the next star. You’ll get something like this:
+
+import turtle
+
+def make_window(colr):
+
+    w = turtle.Screen()
+    w.bgcolor(colr)
+    return w
+
+
+def make_turtle(colr, sz):
+
+    t = turtle.Turtle()
+    t.hideturtle()
+    t.color(colr)
+    t.pensize(sz)
+    return t
+
+
+def make_star(n, sz):
+    for j in range(5):
+        for i in range(5):
+            t.forward(sz)
+            t.right(n)
+        t.penup()
+        t.forward(350)
+        t.right(144)
+        t.pendown()
+
+
+wn = make_window("lightgreen")
+t = make_turtle("hotpink", 3)
+
+make_star(144, 100)
+
+
+
+turtle.done()
