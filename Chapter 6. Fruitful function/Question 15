@@ -1,0 +1,14 @@
+#Now write the function is_odd(n) that returns True when n is odd and False otherwise. Include unit tests for this function too.
+
+def is_odd(n):
+
+    if 0 == (n % 2):
+        return "False"
+
+    if 1 == (n % 2):
+        return "True"
+
+
+n = int(input("Number:"))
+out = is_odd(n)
+print(out)
