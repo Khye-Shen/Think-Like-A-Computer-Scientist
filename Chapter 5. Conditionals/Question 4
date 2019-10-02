@@ -1,0 +1,4 @@
+# 3 == 3 --> 3 equals to 3 | true
+# 3 != 3 --> 3 is not equals to 3 | false
+# 3 >= 4 --> 3 is more than or equal to 4 | false
+# not (3 < 4) --> 3 is not less than 4 | false
