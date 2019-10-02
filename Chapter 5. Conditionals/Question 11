@@ -1,0 +1,12 @@
+#Write a function is_rightangled which, given the length of three sides of a triangle, will determine whether the triangle is right-angled. Assume that the third argument to the function is always the longest side. It will return True if the triangle is right-angled, or False otherwise.
+
+
+def is_rightangled(a, b, c):
+    rightangle = a**2 + b**2 - c**2
+    if abs(rightangle) < 0.000001:
+        print("True")
+    else:
+        print("False")
+
+
+is_rightangled(10, 10 , 14.5)
