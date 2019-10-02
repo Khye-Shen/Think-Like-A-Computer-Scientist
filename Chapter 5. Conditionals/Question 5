@@ -1,0 +1,11 @@
+#Complete this truth table:
+
+p = [False, False, False, False, True, True, True, True]
+q = [False, False, True, True, False, False, True, True]
+r = [False, True, False, True, False, True, False, True]
+
+for i in range (len(p)):
+    print(not(p[i] and q[i]) or r[i])
+
+
+
