@@ -1,4 +1,6 @@
 #Write a function slope(x1, y1, x2, y2) that returns the slope of the line through the points (x1, y1) and (x2, y2). Be sure your implementation of slope can pass the following tests:
+#Then use a call to slope in a new function named intercept(x1, y1, x2, y2) that returns the y-intercept of the line through the points (x1, y1) and (x2, y2)
+
 
 def slope(x1, y1, x2, y2):
 
