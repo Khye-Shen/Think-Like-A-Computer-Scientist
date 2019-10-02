@@ -1,0 +1,19 @@
+#Extend the above program so that the sides can be given to the function in any order.
+
+def is_rightangled(a, b, c):
+
+    if a > b and c:
+        rightangle = c ** 2 + b ** 2 - a ** 2
+    elif b > a and c:
+        rightangle = a ** 2 + c ** 2 - b ** 2
+    elif c > b and a:
+        rightangle = a ** 2 + b ** 2 - c ** 2
+
+
+    if abs(rightangle) < 0.000001:
+        print("True")
+    else:
+        print("False")
+
+
+is_rightangled(5, 4 , 3)
