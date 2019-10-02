@@ -1,0 +1,51 @@
+#Write a function that helps answer questions like ‘“Today is Wednesday. I leave on holiday in 19 days time. What day will that be?”’ So the function must take a day name and a delta argument — the number of days to add — and should return the resulting day name:
+
+def day_num(x):
+    if x == "Monday":
+        return 0
+    elif x == "Tuesday":
+        return 1
+    elif x == "Wednesday":
+        return  2
+    elif x == "Thursday":
+        return 3
+    elif x == "Friday":
+        return 4
+    elif x == "Saturday":
+        return 5
+    elif x == "Sunday":
+        return 6
+    else:
+        return "None"
+
+
+def day_name(x):
+    if x == 0:
+        return "Monday"
+    elif x == 1:
+        return "Tuesday"
+    elif x == 2:
+        return "Wednesday"
+    elif x == 3:
+        return "Thursday"
+    elif x == 4:
+        return "Friday"
+    elif x == 5:
+        return "Saturday"
+    elif x == 6:
+        return "Sunday"
+    else:
+        return "None"
+
+
+day = raw_input("What day is it?")
+leave = int(input("In how many days are you leaving"))
+
+
+present_day = day_num(day)
+
+n = (present_day + leave) % 7
+
+leave_day = day_name(n)
+
+print(leave_day)
