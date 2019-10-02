@@ -1,0 +1,30 @@
+#Write three functions that are the “inverses” of to_secs:
+
+#hours_in returns the whole integer number of hours represented by a total number of seconds.
+#minutes_in returns the whole integer number of left over minutes in a total number of seconds, once the hours have been taken out.
+#seconds_in returns the left over seconds represented by a total number of seconds.
+
+
+
+def hours_in(a):
+    b_secs = a % 3600
+    hours = a // 3600
+    return b_secs, hours
+
+
+def minutes_in(b):
+    c = b % 60
+    minutes = b //60
+    return c, minutes
+
+
+def seconds_in(c):
+    return c
+
+t_secs = int(input("Total Seconds:"))
+
+hour = hours_in(t_secs)
+minute = minutes_in(hour[0])
+secs = seconds_in(minute[0])
+
+print(hour[1], minute[1], secs)
