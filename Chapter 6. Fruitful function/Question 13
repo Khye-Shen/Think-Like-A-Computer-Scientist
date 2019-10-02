@@ -1,0 +1,24 @@
+#Write a function slope(x1, y1, x2, y2) that returns the slope of the line through the points (x1, y1) and (x2, y2). Be sure your implementation of slope can pass the following tests:
+
+def slope(x1, y1, x2, y2):
+
+    m = (y2 - y1) / (x2 - x1)
+
+    return m
+
+
+def intercept(x1, y1, m):
+
+    c = y1 - (m * x1)
+
+    return c
+
+
+
+
+
+gradient = slope(1, 6, 3, 12)
+y_intercept = intercept(1, 6, gradient)
+
+print(gradient)
+print(0, y_intercept)
