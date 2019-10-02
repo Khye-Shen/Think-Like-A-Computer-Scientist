@@ -1,0 +1,32 @@
+#Draw this pretty pattern.
+
+import turtle
+
+def make_window(colr):
+
+    w = turtle.Screen()
+    w.bgcolor(colr)
+    return w
+
+
+def make_turtle(colr, sz):
+
+    t = turtle.Turtle()
+    t.color(colr)
+    t.pensize(sz)
+    return t
+
+def make_pattern(n, sz):
+    for i in range(4):
+        t.forward(sz)
+        t.right(n)
+
+
+wn = make_window("lightgreen")
+t = make_turtle("blue", 3)
+
+for i in range(20):
+    make_pattern(90, 100)
+    t.right(18)
+
+turtle.done()
