@@ -1,0 +1,19 @@
+#Sum up all the even numbers in a list.
+
+num = [2, 5, 12, 456, 75, 88, 1, 4, 66, 45, 90, 324, 321, 11]
+
+def is_even(x):
+
+    sum = 0
+
+    for i in range(x):
+
+        if num[i] % 2 == 0:
+
+            sum = sum + num[i]
+
+    return sum
+
+sum = is_even(len(num))
+
+print(sum)
