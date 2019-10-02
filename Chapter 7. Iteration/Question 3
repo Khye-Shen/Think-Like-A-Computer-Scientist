@@ -1,0 +1,19 @@
+#Sum up all the negative numbers in a list.
+
+num = [-2, 5, -12, 456, -75, 88, 1, 4, 66, -45, 90, 324, -321, 11]
+
+def t_negative(x):
+
+    sum = 0
+
+    for i in range(x):
+
+        if num[i] < 0:
+
+            sum = sum + num[i]
+
+    return sum
+
+sum = t_negative(len(num))
+
+print(sum)
