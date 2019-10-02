@@ -1,0 +1,14 @@
+#Add a print function to Newton’s sqrt function that prints out better each time it is calculated.
+
+def sqrt(n):
+    approx = n/2.0
+    while True:
+        better = (approx + n/approx)/2.0
+        if abs(approx - better) < 0.001:
+            print(better)
+            return better
+        approx = better
+
+ans = sqrt(25)
+
+print(ans)
