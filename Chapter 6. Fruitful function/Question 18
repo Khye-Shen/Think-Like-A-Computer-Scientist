@@ -1,0 +1,11 @@
+#Write the function f2c(t) designed to return the integer value of the nearest degree Celsius for given temperature in Fahrenheit.
+
+def f2c(f):
+
+    c = (f - 32) / 1.8
+
+    return c
+
+celsuis = f2c(212)
+
+print(round(celsuis))
