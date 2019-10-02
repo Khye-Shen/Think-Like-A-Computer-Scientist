@@ -1,0 +1,14 @@
+#Write a function called is_even(n) that takes an integer as an argument and returns True if the argument is an even number and False if it is odd.
+
+def is_even(n):
+
+    if 0 == (n % 2):
+        return "True"
+
+    if 1 == (n % 2):
+        return "False"
+
+
+n = int(input("Number:"))
+out = is_even(n)
+print(out)
