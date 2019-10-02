@@ -1,0 +1,33 @@
+#Write a void function to draw a star, where the length of each side is 100 units.
+
+import turtle
+
+def make_window(colr):
+
+    w = turtle.Screen()
+    w.bgcolor(colr)
+    return w
+
+
+def make_turtle(colr, sz):
+
+    t = turtle.Turtle()
+    t.hideturtle()
+    t.color(colr)
+    t.pensize(sz)
+    return t
+
+
+def make_star(n, sz):
+    for i in range(5):
+        t.forward(sz)
+        t.right(n)
+
+wn = make_window("white")
+t = make_turtle("black", 3)
+
+make_star(144, 100)
+
+
+
+turtle.done()
