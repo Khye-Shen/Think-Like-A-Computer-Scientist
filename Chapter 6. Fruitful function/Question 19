@@ -1,0 +1,11 @@
+#Now do the opposite: write the function c2f which converts Celsius to Fahrenheit:
+
+def c2f(c):
+
+    f = (c * 1.8) + 32
+
+    return f
+
+fahrenheit = c2f(100)
+
+print(fahrenheit)
