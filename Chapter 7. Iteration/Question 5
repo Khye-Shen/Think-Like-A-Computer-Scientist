@@ -1,0 +1,25 @@
+#Sum all the elements in a list up to but not including the first even number.
+
+num = [2, 5, 12, 456, 75, 88, 1, 4, 66, 45, 90, 324, 321, 11]
+
+def sum_n(x):
+
+    sum = 0
+
+    for i in range(x):
+
+        if num[i] % 2 == 0:
+
+            num.remove(num[i])
+
+            break
+
+    for j in range(x - 1):
+
+        sum = sum + num[j]
+
+    return sum
+
+sum = sum_n(len(num))
+
+print(sum)
