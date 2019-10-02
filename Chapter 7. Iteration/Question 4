@@ -1,0 +1,21 @@
+#Count how many words in a list have length 5.
+
+words = ["charm", "reporter", "curve", "sniff", "uncertainty", "fashion", "stuff", "foot"]
+
+
+
+def word_length(x):
+
+    count = 0
+
+    for i in range(x):
+
+        if len(words[i]) == 5:
+
+            count = count + 1
+
+    return count
+
+count = word_length(len(words))
+
+print(count)
