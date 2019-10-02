@@ -1,0 +1,25 @@
+#Write the inverse function day_num which is given a day name, and returns its number:
+
+def day_name(x):
+    if x == "Monday":
+        return 1
+    elif x == "Tuesday":
+        return 2
+    elif x == "Wednesday":
+        return  3
+    elif x == "Thursday":
+        return 4
+    elif x == "Friday":
+        return 5
+    elif x == "Saturday":
+        return 6
+    elif x == "Sunday":
+        return 7
+    else:
+        return "None"
+
+n = raw_input("Day:")
+
+day = day_name(n)
+
+print(day)
