@@ -1,0 +1,24 @@
+#The four compass points can be abbreviated by single-letter strings as “N”, “E”, “S”, and “W”. Write a function turn_clockwise that takes one of these four compass points as its parameter, and returns the next compass point in the clockwise direction. Here are some tests that should pass:
+
+def turn_clockwise(x):
+
+    if x == "N":
+        return "E"
+
+    elif x == "E":
+        return "S"
+
+    elif x == "S":
+        return "W"
+
+    elif x == "W":
+        return "N"
+
+
+
+x = raw_input("What's the direction of the compass")
+
+
+turn_clockwise(x)
+
+print(x)
