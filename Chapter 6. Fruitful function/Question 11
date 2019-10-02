@@ -1,0 +1,13 @@
+#Write a compare function that returns 1 if a > b, 0 if a == b, and -1 if a < b
+
+def compare(a, b):
+    if a > b:
+        return 1
+    elif a == b:
+        return 0
+    elif a < b:
+        return -1
+
+comp = compare(2, 3)
+print(comp)
+
