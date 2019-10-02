@@ -1,0 +1,9 @@
+#Create a turtle, and assign it to a variable. When you ask for its type, what do you get?
+
+import turtle
+
+t = turtle.Screen()
+
+a = type(t)
+
+print(a)
