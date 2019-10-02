@@ -1,0 +1,12 @@
+#Write a function print_triangular_numbers(n) that prints out the first n triangular numbers.
+
+def print_triangular_numbers(n):
+
+    for i in range (n + 1):
+
+        t_num = (i * (i + 1)) / 2
+
+        print(i, t_num)
+
+
+print_triangular_numbers(5)
