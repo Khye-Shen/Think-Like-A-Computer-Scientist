@@ -1,0 +1,27 @@
+#Write a void function draw_poly(t, n, sz) which makes a turtle draw a regular polygon. When called with draw_poly(tess, 8, 50), it will draw a shape like this:
+
+import turtle
+
+def make_window(colr):
+
+    w = turtle.Screen()
+    w.bgcolor(colr)
+    return w
+
+
+wn = make_window("lightgreen")
+
+
+def draw_poly(t, n, sz):
+    t = turtle.Turtle()
+    t.pensize(3)
+    t.color("hotpink")
+    angle = 360 / n
+    for i in range(n):
+        t.forward(sz)
+        t.right(angle)
+
+
+draw_poly("tess", 8, 50)
+
+turtle.done()
