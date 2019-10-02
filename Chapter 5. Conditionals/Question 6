@@ -1,0 +1,23 @@
+#Write a function which is given an exam mark, and it returns a string — the grade for that mark — according to this scheme:
+
+xs = [83, 75, 74.9, 70, 69.9, 65, 60, 59.9, 55, 50,
+                     49.9, 45, 44.9, 40, 39.9, 2, 0]
+
+def ms(n):
+    if n >= 75:
+        print("Grade: First")
+    elif n >= 70 and n <75:
+        print("Grade: Upper Second")
+    elif n >= 60 and n < 70:
+        print("Grade: Second")
+    elif n >= 50 and n < 60:
+        print("Grade: Third")
+    elif n >= 45 and n < 50:
+        print("Grade: F1 Supp")
+    elif n >=40 and n < 45:
+        print("Grade: F2")
+    else:
+        print("Grade: F3")
+
+for i in range(len(xs)):
+    ms(xs[i])
