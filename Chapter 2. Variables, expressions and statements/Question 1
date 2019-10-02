@@ -1,1 +1,15 @@
-eat dick
+##Take the sentence: All work and no play makes Jack a dull boy. Store each word in a separate variable, then print out the sentence on one line using print.
+
+s = "All "
+s1 = "work "
+s2 = "and "
+s3 = "no "
+s4 = "play "
+s5 = "makes "
+s6 = "Jack "
+s7 = "a "
+s8 = "dull "
+s9 = "boy"
+
+print(s + s1 + s2 + s3 + s4 + s5 + s6 + s7 + s8 + s9)
+
