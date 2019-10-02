@@ -1,0 +1,65 @@
+#Write a Python program to solve the general version of the above problem. Ask the user for the time now (in hours), and ask for the number of hours to wait. Your program should output what the time will be on the clock when the alarm goes off.
+
+time = int(input("what time is it now (in hours)?"))
+
+time_passed = int(input("How many hours do you want to wait"))
+
+am_or_pm = ""
+
+time1 = time
+
+if time1 == 24:
+    print("Starting time is", 12, "am")
+    time1 = 0
+    am_or_pm = "am"
+
+
+elif time1 > 11 and time1 != 24:
+    if time1 != 12:
+        time1 = time1 - 12
+        am_or_pm = "pm"
+        print("Starting time is", time1, am_or_pm)
+    else:
+        am_or_pm = "pm"
+        print("Starting time is", time1, am_or_pm)
+
+else:
+    am_or_pm = "am"
+    print("Starting time is", time1, am_or_pm)
+
+
+
+
+t = time_passed % 24
+
+time_now = (time + t)
+
+if time_now > 24:
+
+    t = time_now % 24
+
+    time_now = t
+
+
+
+
+if time_now == 24:
+    time_now = 12
+    am_or_pm = "am"
+
+elif time_now > 11 and time_now != 24:
+    if time_now != 12:
+        time_now = time_now - 12
+        am_or_pm = "pm"
+    else:
+        am_or_pm = "pm"
+
+else:
+    if time_now == 0:
+        time_now = 12
+        am_or_pm = "am"
+    else:
+        am_or_pm = "am"
+
+
+print("The time now is", time_now, am_or_pm)
