@@ -1,0 +1,22 @@
+# You go on a wonderful holiday leaving on day number 3 (a Wednesday).
+# You return home after 137 sleeps.
+# Write a general version of the program which asks for the starting day number,
+# and the length of your stay, and it will tell you the name of day of the week you will return on.
+
+days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday"]
+
+
+
+def day(n, x):
+
+    week = x // 7
+    day_return = (x + n) % 7
+    print(day_return)
+
+    print("You leave on", days[n] ,"and return on", days[day_return], "week", week)
+
+
+
+n = int(input("What day number do you want to leave at?"))
+x = int(input("How many days do you want to stay"))
+day(n, x)
