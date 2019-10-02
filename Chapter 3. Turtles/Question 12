@@ -1,0 +1,29 @@
+#Write a program to draw a face of a clock
+
+import turtle
+
+t = turtle.Turtle()
+
+wn = turtle.Screen()
+
+wn.bgcolor("lightgreen")
+
+t.color("blue")
+t.shape("turtle")
+t.penup()
+t.pensize(3)
+
+for i in range(12):
+
+    t.forward(120)
+    t.pendown()
+    t.forward(10)
+    t.penup()
+    t.forward(20)
+
+    t.stamp()
+
+    t.forward(-150)
+    t.right(30)
+
+turtle.done()
