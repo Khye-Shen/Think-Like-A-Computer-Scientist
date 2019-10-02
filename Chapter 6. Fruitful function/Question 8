@@ -1,0 +1,15 @@
+#Extend to_secs so that it can cope with real values as inputs. It should always return an integer number of seconds (truncated towards zero):
+
+def to_secs(a, b , c):
+
+    minutes = (a * 60) + b
+
+    secs = (minutes * 60) + c
+
+    r_secs = int(secs)
+
+    return r_secs
+
+total_secs = to_secs(2.5, 0, 10.71)
+
+print(total_secs)
