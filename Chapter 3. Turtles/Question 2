@@ -1,0 +1,18 @@
+#Give three attributes of your cellphone object. Give three methods of your cellphone.
+
+import turtle
+
+wn = turtle.Screen()
+cellphone = turtle.Turtle()
+
+cellphone.color("red")
+cellphone.shape("circle")
+cellphone.pensize(5)
+
+cellphone.forward(100)
+cellphone.right(90)
+cellphone.forward(50)
+cellphone.left(90)
+cellphone.back(50)
+
+turtle.mainloop()
