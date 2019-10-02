@@ -1,0 +1,10 @@
+#Which of these tests fail? Explain why
+
+
+print 3 % 4 == 0
+print 3 % 4 == 3
+print 3 / 4 == 0
+print 3 // 4 == 0
+print 3+4  *  2 == 14
+print 4-2+2 == 0
+print len("hello, world!") == 13
