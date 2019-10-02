@@ -1,0 +1,31 @@
+#Use for loops to make a turtle draw these regular polygons
+
+import turtle
+
+t = turtle.Turtle()
+
+t.forward(100)  # traingle
+t.left(120)
+t.forward(100)
+t.left(120)
+t.forward(100)
+
+
+t.forward(50) #square
+t.left(90)
+t.forward(50)
+t.left(90)
+t.forward(50)
+t.left(90)
+t.forward(50)
+t.left(90)
+
+for i in range(6): #hexagon
+  t.forward(100)
+  t.left(60)
+
+for i in range(8): #octagon
+    t.forward(100)
+    t.right(45)
+
+turtle.done()
