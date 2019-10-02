@@ -1,0 +1,7 @@
+#Place a comment before a line of code that previously worked, and record what happens when you rerun the program.
+
+print("Hello")
+
+#comment print("Hello")
+
+#the code itself became a comment
