@@ -1,0 +1,19 @@
+#Write a function to count how many odd numbers are in a list.
+
+num = [2, 5, 12, 456, 75, 88, 1, 4, 66, 45, 90, 324, 321, 11]
+
+def is_odd(x):
+
+    count = 0
+
+    for i in range(x):
+
+        if num[i] % 2 == 1:
+
+            count = count + 1
+
+    return count
+
+count = is_odd(len(num))
+
+print(count)
