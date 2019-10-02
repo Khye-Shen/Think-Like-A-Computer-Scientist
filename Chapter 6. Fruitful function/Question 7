@@ -1,0 +1,13 @@
+#Write a function to_secs that converts hours, minutes and seconds to a total number of seconds. Here are some tests that should pass:
+
+def to_secs(a, b , c):
+
+    minutes = (a * 60) + b
+
+    secs = (minutes * 60) + c
+
+    return secs
+
+total_secs = to_secs(2, 30, 10)
+
+print(total_secs)
