@@ -1,0 +1,27 @@
+#Count how many words occur in a list up to and including the first occurrence of the word “sam”.
+
+words = ["charm", "reporter", "curve", "sam", "uncertainty", "fashion", "stuff", "foot"]
+
+def w_c(x):
+
+    count = 0
+    place = 0
+
+    for i in range(x):
+
+        if words[i] == "sam":
+
+            place = i -1
+
+            break
+
+    for j in range(x):
+
+        count = count + 1
+
+    return (place, count)
+
+counter = w_c(len(words))
+
+print("total number of words:", counter[1])
+print("place of 'sam':", counter[0])
