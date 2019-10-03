@@ -1,0 +1,17 @@
+#What will num_digits(0) return? Modify it to return 1 for this case. Why does a call to num_digits(-24) result in an infinite loop? (hint: -1//10 evaluates to -1) Modify num_digits so that it works correctly with any integer value.
+
+
+def num_digits(x):
+
+    if x < 0:
+        x  = -x
+
+    digits = len(str(x))
+
+    return digits
+
+x = int(input("Number:"))
+
+length = num_digits(x)
+
+print(length)
