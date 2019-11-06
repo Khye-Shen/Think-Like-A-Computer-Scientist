@@ -1,0 +1,21 @@
+#Write a function that removes all occurrences of a string from another string:
+
+def remove_all(substring, string):
+
+
+
+    for i in range(0, len(string) - len(substring) + 1):
+
+        if string[i:i + len(substring)] == substring:
+
+
+            re_word = string.replace(substring, '')
+
+            return re_word
+
+
+
+t = remove_all("iss", "Mississippi")
+
+print(t)
+
