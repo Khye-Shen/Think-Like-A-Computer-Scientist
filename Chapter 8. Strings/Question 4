@@ -1,0 +1,15 @@
+# Now rewrite the count_letters function so that instead of traversing the string, it repeatedly calls the find method, with the optional third parameter to locate new occurrences of the letter being counted.
+
+def count_letters(fruit ,ch, start=0):
+    count = 0
+    t = start
+    while True:
+        t = fruit.find(ch, t)
+        t += 1
+        count += 1
+        if t >= len(fruit):
+            break
+    return count
+
+letters = count_letters("banana", "a", 0)
+print(letters)
