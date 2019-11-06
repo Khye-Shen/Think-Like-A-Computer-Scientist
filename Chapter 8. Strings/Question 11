@@ -1,0 +1,22 @@
+#Write a function that counts how many times a substring occurs in a string:
+
+
+def my_count(string, substring):
+
+    count = 0
+
+    for i in range(0, len(string) - len(substring) + 1):
+
+        if string[i:i + len(substring)] == substring:
+            count += 1
+
+
+    return count
+
+
+
+
+t = my_count("anbncg", "a")
+
+print(t)
+
