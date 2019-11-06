@@ -1,0 +1,13 @@
+#Write a function that mirrors its argument:
+
+word = "something"
+
+def mirror(w):
+
+
+    reversed_string = w[::-1]
+
+    return reversed_string
+
+r_word = mirror(word)
+print(word + r_word)
