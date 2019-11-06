@@ -1,0 +1,11 @@
+# Write a function that reverses its string argument, and satisfies these tests:
+
+def reverseWords(w):
+
+
+    reversed_string = w[::-1]
+
+    return reversed_string
+
+r_word = reverseWords("word")
+print(r_word)
