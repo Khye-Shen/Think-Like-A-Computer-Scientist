@@ -1,0 +1,19 @@
+#Write a function that recognizes palindromes. (Hint: use your reverse function to make this easy!):
+
+def is_palindrome(word):
+
+    reversed_string = word[::-1]
+
+    if word == reversed_string:
+
+        statement = "is palindrome"
+
+    else:
+
+        statement = "not palindrome"
+
+
+    return statement
+
+t = is_palindrome("abab")
+print(t)
