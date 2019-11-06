@@ -1,0 +1,38 @@
+# Assign to a variable in your program a triple-quoted string that contains your favourite paragraph of text — perhaps a poem, a speech, instructions to bake a cake, some inspirational verses, etc.
+
+#Write a function which removes all punctuation from the string, breaks the string into a list of words, and counts the number of words in your text that contain the letter “e”. Your program should print an analysis of the text like this:
+
+text = """You make me feel special!
+No matter how the world brings me down,
+Even when hurtful words stab me,
+I smile again cuz you're there,
+That's what you do...
+*Again, I feel special!!!*
+*One moment I feel like, I'm nothing at all,*
+*Like no one would notice If I were gone,*
+*But then when I hear you calling me,
+*I feel loved, I feel so special ;-;* """
+
+import string
+
+def text_analysis(text):
+    count = 0
+    without_punct = ""
+
+
+    for letter in text:
+        if letter not in string.punctuation:
+            without_punct += letter
+
+    split = without_punct.split()
+
+    for i in range(len(split)):
+        if split[i].find("e") != -1:
+            count += 1
+
+    return (without_punct, count, len(split), split)
+
+t = text_analysis(text)
+print(t)
+
+print(""" Your text contains {0} words, of which {1} ({2}%) contains an "e" """.format(t[2], t[1], float(t[1])/float(t[2]) * 100))
