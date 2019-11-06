@@ -1,0 +1,23 @@
+#Write a function that removes the first occurrence of a string from another string:
+
+
+def remove(substring, string):
+
+
+
+    for i in range(0, len(string) - len(substring) + 1):
+
+        if string[i:i + len(substring)] == substring:
+
+
+            re_word = string.replace(substring, '', 1)
+
+            return re_word
+
+
+
+
+t = remove("na", "banana")
+
+print(t)
+
