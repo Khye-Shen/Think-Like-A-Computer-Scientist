@@ -1,0 +1,26 @@
+#Write a function that removes all occurrences of a given letter from a string:
+
+def remove_letter(a, b):
+
+    word = []
+    abc = ""
+
+    for i in b:
+
+        word.append(i)
+
+        if i == a:
+
+            word.remove(i)
+
+    for j in range(len(word)):
+
+        re_word = word[j]
+        abc = abc + re_word
+
+    return abc
+
+
+
+t = remove_letter("a", "apple")
+print(t)
