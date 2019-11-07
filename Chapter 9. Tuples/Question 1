@@ -1,1 +1,18 @@
 #We’ve said nothing in this chapter about whether you can pass tuples as arguments to a function. Construct a small Python example to test whether this is possible, and write up your findings.
+
+Names = ("Julia", "Roberts", 1967, "Duplicity", 2009, "Actress", "Atlanta, Georgia")
+
+
+def tt(a):
+    c = 2 * math.pi * a
+    b = math.pi * a * a
+    return (c, b)
+    
+    
+print(Names[2:])
+print(Names[3:])
+print(Names[4:])
+print(Names[:2])
+print(Names[:3])
+print(Names[:4])
+print(Names[5:])
