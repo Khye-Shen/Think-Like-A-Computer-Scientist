@@ -1,0 +1,15 @@
+
+def readposint():
+    integer = raw_input("Input a postive integer: ")
+
+
+    if int(integer) < 0 or type(integer) == str:
+
+        my_error = ValueError("{0} is not a valid integer".format(integer))
+        raise my_error
+
+    return integer
+
+
+
+readposint()
