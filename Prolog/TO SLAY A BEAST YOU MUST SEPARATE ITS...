@@ -1,1 +1,26 @@
+weather(good):-
+temp(high),
+humidity(dry),
+sky(sunny).
+
+weather(bad):-
+humidity(wet);
+temp(low);
+sky(cloudy).
+
+go:-
+write('Is the temperature high or low?'),
+read(Temp), nl,
+write('Is the sky sunny or cloudy?'),
+read(Sky), nl,
+write('Is humidity dry or wet?'),
+read(Humidity), nl,
+assert(temp(Temp)),
+assert(sky(Sky)),
+assert(humidity(Humidity)),
+weather(weather),
+write('The Weather is '), write(Weather),
+retractall(temp(_)),
+retractall(sky(_)),
+retractall(humidity(_)).
 
