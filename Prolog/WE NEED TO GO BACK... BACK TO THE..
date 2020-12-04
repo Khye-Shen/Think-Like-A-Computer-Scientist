@@ -1,1 +1,15 @@
+containsMeat(X)
 
+ingredient(tagine, aubergine, 250)
+ingredient(tagine, tomato, 100)
+ingredient(stew, beef, 400)
+
+
+containsMeat(stew)
+ingredient(stew, potato, 600)
+
+
+meat(aubergine)
+meat(tomato)
+meet(beef)
+meat(potato)
