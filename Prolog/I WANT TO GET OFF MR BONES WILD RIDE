@@ -1,1 +1,13 @@
+Person(A). 
+person(b). 
+person(c). 
+person(d). 
+parent(a,b). 
+parent(b,c). 
 
+
+check(A,B):- 
+parent(A,B). 
+check(A,B):- 
+parent(A,X), 
+check(X,B).
