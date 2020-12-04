@@ -1,1 +1,10 @@
+name(joey, male). /* Joey is a male */
+name(ross, male).
+name(rachel, female).
+name(phoebe, female).
+name(monica, female).
+name(chandler, male).
 
+recipe(chicken_soup, Ingredient, _ ).
+recipe(mushroom_soup, Ingredient, _ ).
+recipe(pumpkin_soup, Ingredient, _ ).
